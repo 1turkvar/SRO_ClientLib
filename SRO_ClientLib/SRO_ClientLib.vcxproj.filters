@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Hook">
+      <UniqueIdentifier>{6be4b27e-7284-4354-bf06-c737bfa5489a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{6a0e45f2-ab20-4934-bf0a-484e6c207597}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainData">
+      <UniqueIdentifier>{30e0249d-b0c8-4efb-be51-0199b2482e05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PatchClient">
+      <UniqueIdentifier>{29ac9ad2-6d65-4bfc-89c5-4bfb211a6789}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SRO_Client">
+      <UniqueIdentifier>{b4c7e5c3-c3cd-4462-ba3d-8295b8ec843f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data">
+      <UniqueIdentifier>{ddd91aba-615f-4272-b9ac-f82a1e12148d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MemoryHack.h">
+      <Filter>Hook</Filter>
+    </ClInclude>
+    <ClInclude Include="SRO_ClientLib.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>MainData</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>MainData</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBank.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="PatchClient.h">
+      <Filter>PatchClient</Filter>
+    </ClInclude>
+    <ClInclude Include="Globals.h">
+      <Filter>MainData</Filter>
+    </ClInclude>
+    <ClInclude Include="PatchWatermark.h">
+      <Filter>PatchClient</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MemoryHack.cpp">
+      <Filter>Hook</Filter>
+    </ClCompile>
+    <ClCompile Include="SRO_ClientLib.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>MainData</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBank.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="PatchClient.cpp">
+      <Filter>PatchClient</Filter>
+    </ClCompile>
+    <ClCompile Include="Globals.cpp">
+      <Filter>MainData</Filter>
+    </ClCompile>
+    <ClCompile Include="PatchWatermark.cpp">
+      <Filter>PatchClient</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
