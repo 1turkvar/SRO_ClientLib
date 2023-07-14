@@ -17,6 +17,9 @@ void Initialize(bool SystemOK)
 	{
 		g_PatchClient = new PatchClient(true); //-> Oyun içi bazý fix ve Cap vs ayarlar
 		g_PatchWaterMark = new PatchWaterMark(true); //-> Giriþ Veriyon Renklendirme vs yazý ekleme
+
+		//Old
+		g_OldLoginScreen = new OldLoginScreen(true);
 	}
 }
 

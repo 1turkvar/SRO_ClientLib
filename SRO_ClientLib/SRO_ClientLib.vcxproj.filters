@@ -19,6 +19,15 @@
     <Filter Include="Data">
       <UniqueIdentifier>{ddd91aba-615f-4272-b9ac-f82a1e12148d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="GameFeatures">
+      <UniqueIdentifier>{1bfe61c8-ff9f-47ec-bdc5-206028f59b4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameFeatures\OldUnderBar">
+      <UniqueIdentifier>{f598bdde-4fc3-4fdc-8871-dc43c68711ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameFeatures\OldLoginScreen">
+      <UniqueIdentifier>{d31be71d-72bb-409e-8514-51d18498eb85}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MemoryHack.h">
@@ -45,6 +54,27 @@
     <ClInclude Include="PatchWatermark.h">
       <Filter>PatchClient</Filter>
     </ClInclude>
+    <ClInclude Include="address_helper.h">
+      <Filter>GameFeatures\OldLoginScreen</Filter>
+    </ClInclude>
+    <ClInclude Include="Character3D.h">
+      <Filter>GameFeatures\OldLoginScreen</Filter>
+    </ClInclude>
+    <ClInclude Include="Keyframe.h">
+      <Filter>GameFeatures\OldLoginScreen</Filter>
+    </ClInclude>
+    <ClInclude Include="PSCharacterSelect.h">
+      <Filter>GameFeatures\OldLoginScreen</Filter>
+    </ClInclude>
+    <ClInclude Include="static_constructor.h">
+      <Filter>GameFeatures\OldLoginScreen</Filter>
+    </ClInclude>
+    <ClInclude Include="Vec3.h">
+      <Filter>GameFeatures\OldLoginScreen</Filter>
+    </ClInclude>
+    <ClInclude Include="OldLoginScreen.h">
+      <Filter>GameFeatures\OldLoginScreen</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MemoryHack.cpp">
@@ -67,6 +97,15 @@
     </ClCompile>
     <ClCompile Include="PatchWatermark.cpp">
       <Filter>PatchClient</Filter>
+    </ClCompile>
+    <ClCompile Include="PSCharacterSelect.cpp">
+      <Filter>GameFeatures\OldLoginScreen</Filter>
+    </ClCompile>
+    <ClCompile Include="static_constructor.cpp">
+      <Filter>GameFeatures\OldLoginScreen</Filter>
+    </ClCompile>
+    <ClCompile Include="OldLoginScreen.cpp">
+      <Filter>GameFeatures\OldLoginScreen</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

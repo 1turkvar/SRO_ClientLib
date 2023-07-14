@@ -19,22 +19,32 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="address_helper.h" />
+    <ClInclude Include="Character3D.h" />
     <ClInclude Include="DataBank.h" />
     <ClInclude Include="Globals.h" />
+    <ClInclude Include="Keyframe.h" />
     <ClInclude Include="MemoryHack.h" />
+    <ClInclude Include="OldLoginScreen.h" />
     <ClInclude Include="PatchClient.h" />
     <ClInclude Include="PatchWatermark.h" />
+    <ClInclude Include="PSCharacterSelect.h" />
     <ClInclude Include="SRO_ClientLib.h" />
+    <ClInclude Include="static_constructor.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="Vec3.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DataBank.cpp" />
     <ClCompile Include="Globals.cpp" />
     <ClCompile Include="MemoryHack.cpp" />
+    <ClCompile Include="OldLoginScreen.cpp" />
     <ClCompile Include="PatchClient.cpp" />
     <ClCompile Include="PatchWatermark.cpp" />
+    <ClCompile Include="PSCharacterSelect.cpp" />
     <ClCompile Include="SRO_ClientLib.cpp" />
+    <ClCompile Include="static_constructor.cpp" />
     <ClCompile Include="stdafx.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
