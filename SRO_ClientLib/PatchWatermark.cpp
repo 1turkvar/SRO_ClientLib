@@ -29,7 +29,7 @@ PatchWaterMark::PatchWaterMark(bool SysOpen)
 	if (versionFormat.length() == 0)
 	{
 		versionFormat.append(L"Ver %d.%03d\n");
-		versionFormat.append(L"Epvp");
+		versionFormat.append(L"SRO_ClientLib");
 	}
 #pragma pack(push, 1)
 	struct

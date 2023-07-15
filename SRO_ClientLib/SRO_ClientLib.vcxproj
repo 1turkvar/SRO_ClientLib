@@ -22,27 +22,65 @@
     <ClInclude Include="address_helper.h" />
     <ClInclude Include="Character3D.h" />
     <ClInclude Include="DataBank.h" />
+    <ClInclude Include="GInterface.h" />
+    <ClInclude Include="GlobalDataManager.h" />
     <ClInclude Include="Globals.h" />
+    <ClInclude Include="ICPlayer.h" />
+    <ClInclude Include="IFEquipment.h" />
+    <ClInclude Include="IFGauge.h" />
+    <ClInclude Include="IFHelperBubbleWindow.h" />
+    <ClInclude Include="IFInventory.h" />
+    <ClInclude Include="IFMainPopup.h" />
+    <ClInclude Include="IFSlotWithHelp.h" />
+    <ClInclude Include="IFStatic.h" />
+    <ClInclude Include="IFUnderMenuBar.h" />
+    <ClInclude Include="IFWnd.h" />
+    <ClInclude Include="IRMManager.h" />
     <ClInclude Include="Keyframe.h" />
+    <ClInclude Include="LevelData.h" />
     <ClInclude Include="MemoryHack.h" />
+    <ClInclude Include="ObjectData.h" />
+    <ClInclude Include="OldAlchemyWnd.h" />
+    <ClInclude Include="OldItemTooltip.h" />
     <ClInclude Include="OldLoginScreen.h" />
+    <ClInclude Include="OldMainPopWnd.h" />
+    <ClInclude Include="OldTargetWnd.h" />
+    <ClInclude Include="OldUnderBar.h" />
     <ClInclude Include="PatchClient.h" />
     <ClInclude Include="PatchWatermark.h" />
     <ClInclude Include="PSCharacterSelect.h" />
+    <ClInclude Include="SOItem.h" />
     <ClInclude Include="SRO_ClientLib.h" />
+    <ClInclude Include="sro_wstring.h" />
     <ClInclude Include="static_constructor.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="Vec3.h" />
+    <ClInclude Include="wstring05.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DataBank.cpp" />
+    <ClCompile Include="GInterface.cpp" />
+    <ClCompile Include="GlobalDataManager.cpp" />
     <ClCompile Include="Globals.cpp" />
+    <ClCompile Include="IFEquipment.cpp" />
+    <ClCompile Include="IFHelperBubbleWindow.cpp" />
+    <ClCompile Include="IFInventory.cpp" />
+    <ClCompile Include="IFMainPopup.cpp" />
+    <ClCompile Include="IFSlotWithHelp.cpp" />
+    <ClCompile Include="IFUnderMenuBar.cpp" />
+    <ClCompile Include="IRMManager.cpp" />
     <ClCompile Include="MemoryHack.cpp" />
+    <ClCompile Include="OldAlchemyWnd.cpp" />
+    <ClCompile Include="OldItemTooltip.cpp" />
     <ClCompile Include="OldLoginScreen.cpp" />
+    <ClCompile Include="OldMainPopWnd.cpp" />
+    <ClCompile Include="OldTargetWnd.cpp" />
+    <ClCompile Include="OldUnderBar.cpp" />
     <ClCompile Include="PatchClient.cpp" />
     <ClCompile Include="PatchWatermark.cpp" />
     <ClCompile Include="PSCharacterSelect.cpp" />
+    <ClCompile Include="SOItem.cpp" />
     <ClCompile Include="SRO_ClientLib.cpp" />
     <ClCompile Include="static_constructor.cpp" />
     <ClCompile Include="stdafx.cpp" />
@@ -66,7 +104,7 @@
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>NotSet</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
@@ -119,12 +157,9 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;NDEBUG;SROCLIENTLIB_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp14</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

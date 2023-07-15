@@ -7,21 +7,18 @@ HMODULE sro_clientAdress = 0;
 //////////////////////////////////////* System OK *///////////////////////////////////////////////
 void InitThreadWorker()
 {
-	
+	g_PatchClient = new PatchClient(true); //-> Oyun içi bazý fix ve Cap vs ayarlar
+	g_PatchWaterMark = new PatchWaterMark(true); //-> Giriþ Veriyon Renklendirme vs yazý ekleme
+
+	//Old
+	g_OldLoginScreen = new OldLoginScreen(true);
+	g_OldUnderBar = new OldUnderBar(true);
+	g_OldTargetWnd = new OldTargetWnd(true);
+	g_OldItemTooltip = new OldItemTooltip(true);
+	g_OldAlchemyWnd = new OldAlchemyWnd(true);
+	g_OldMainPopWnd = new OldMainPopWnd(true);
 }
 
-void Initialize(bool SystemOK)
-{
-	
-	if (SystemOK == true)
-	{
-		g_PatchClient = new PatchClient(true); //-> Oyun içi bazý fix ve Cap vs ayarlar
-		g_PatchWaterMark = new PatchWaterMark(true); //-> Giriþ Veriyon Renklendirme vs yazý ekleme
-
-		//Old
-		g_OldLoginScreen = new OldLoginScreen(true);
-	}
-}
 
 BOOL APIENTRY DllMain(HMODULE hModule,
 	DWORD  ul_reason_for_call,
@@ -45,7 +42,6 @@ BOOL APIENTRY DllMain(HMODULE hModule,
 		sro_clientAdress = GetModuleHandle(NULL);
 		std::cout << "Adress :" << sro_clientAdress << std::endl;
 
-		Initialize(true);
 
 	}
 	break;

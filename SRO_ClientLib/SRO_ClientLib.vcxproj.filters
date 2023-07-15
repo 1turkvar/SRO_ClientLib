@@ -28,6 +28,21 @@
     <Filter Include="GameFeatures\OldLoginScreen">
       <UniqueIdentifier>{d31be71d-72bb-409e-8514-51d18498eb85}</UniqueIdentifier>
     </Filter>
+    <Filter Include="SRO_Client\Objects">
+      <UniqueIdentifier>{20b71cb5-1fab-4710-ad7c-31a47f4ee2fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameFeatures\OldTargetWnd">
+      <UniqueIdentifier>{487abe34-78f8-4c7e-b41c-e2b390587d7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameFeatures\OldItemToolTip">
+      <UniqueIdentifier>{22eec781-08bc-4799-8828-712e281e1fb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameFeatures\OldAlchemyWnd">
+      <UniqueIdentifier>{f227f451-7f40-4ff3-ab84-8065bb23dea6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameFeatures\OldMainPopWnd">
+      <UniqueIdentifier>{a9e32e31-94b1-4464-8236-6c983e663352}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MemoryHack.h">
@@ -75,6 +90,75 @@
     <ClInclude Include="OldLoginScreen.h">
       <Filter>GameFeatures\OldLoginScreen</Filter>
     </ClInclude>
+    <ClInclude Include="IFUnderMenuBar.h">
+      <Filter>SRO_Client</Filter>
+    </ClInclude>
+    <ClInclude Include="IFWnd.h">
+      <Filter>SRO_Client</Filter>
+    </ClInclude>
+    <ClInclude Include="IFGauge.h">
+      <Filter>SRO_Client</Filter>
+    </ClInclude>
+    <ClInclude Include="IFStatic.h">
+      <Filter>SRO_Client</Filter>
+    </ClInclude>
+    <ClInclude Include="ICPlayer.h">
+      <Filter>SRO_Client</Filter>
+    </ClInclude>
+    <ClInclude Include="GlobalDataManager.h">
+      <Filter>SRO_Client</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelData.h">
+      <Filter>SRO_Client</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectData.h">
+      <Filter>SRO_Client\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="OldUnderBar.h">
+      <Filter>GameFeatures\OldUnderBar</Filter>
+    </ClInclude>
+    <ClInclude Include="OldTargetWnd.h">
+      <Filter>GameFeatures\OldTargetWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="OldItemTooltip.h">
+      <Filter>GameFeatures\OldItemToolTip</Filter>
+    </ClInclude>
+    <ClInclude Include="IFHelperBubbleWindow.h">
+      <Filter>SRO_Client</Filter>
+    </ClInclude>
+    <ClInclude Include="wstring05.h">
+      <Filter>MainData</Filter>
+    </ClInclude>
+    <ClInclude Include="sro_wstring.h">
+      <Filter>MainData</Filter>
+    </ClInclude>
+    <ClInclude Include="IFSlotWithHelp.h">
+      <Filter>SRO_Client</Filter>
+    </ClInclude>
+    <ClInclude Include="SOItem.h">
+      <Filter>SRO_Client\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="IFEquipment.h">
+      <Filter>SRO_Client</Filter>
+    </ClInclude>
+    <ClInclude Include="IFMainPopup.h">
+      <Filter>SRO_Client</Filter>
+    </ClInclude>
+    <ClInclude Include="IFInventory.h">
+      <Filter>SRO_Client</Filter>
+    </ClInclude>
+    <ClInclude Include="GInterface.h">
+      <Filter>SRO_Client</Filter>
+    </ClInclude>
+    <ClInclude Include="IRMManager.h">
+      <Filter>SRO_Client</Filter>
+    </ClInclude>
+    <ClInclude Include="OldAlchemyWnd.h">
+      <Filter>GameFeatures\OldAlchemyWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="OldMainPopWnd.h">
+      <Filter>GameFeatures\OldMainPopWnd</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MemoryHack.cpp">
@@ -106,6 +190,51 @@
     </ClCompile>
     <ClCompile Include="OldLoginScreen.cpp">
       <Filter>GameFeatures\OldLoginScreen</Filter>
+    </ClCompile>
+    <ClCompile Include="IFUnderMenuBar.cpp">
+      <Filter>SRO_Client</Filter>
+    </ClCompile>
+    <ClCompile Include="GlobalDataManager.cpp">
+      <Filter>SRO_Client</Filter>
+    </ClCompile>
+    <ClCompile Include="OldUnderBar.cpp">
+      <Filter>GameFeatures\OldUnderBar</Filter>
+    </ClCompile>
+    <ClCompile Include="OldTargetWnd.cpp">
+      <Filter>GameFeatures\OldTargetWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="OldItemTooltip.cpp">
+      <Filter>GameFeatures\OldItemToolTip</Filter>
+    </ClCompile>
+    <ClCompile Include="IFHelperBubbleWindow.cpp">
+      <Filter>SRO_Client</Filter>
+    </ClCompile>
+    <ClCompile Include="IFSlotWithHelp.cpp">
+      <Filter>SRO_Client</Filter>
+    </ClCompile>
+    <ClCompile Include="SOItem.cpp">
+      <Filter>SRO_Client\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="IFEquipment.cpp">
+      <Filter>SRO_Client</Filter>
+    </ClCompile>
+    <ClCompile Include="IFMainPopup.cpp">
+      <Filter>SRO_Client</Filter>
+    </ClCompile>
+    <ClCompile Include="IFInventory.cpp">
+      <Filter>SRO_Client</Filter>
+    </ClCompile>
+    <ClCompile Include="GInterface.cpp">
+      <Filter>SRO_Client</Filter>
+    </ClCompile>
+    <ClCompile Include="IRMManager.cpp">
+      <Filter>SRO_Client</Filter>
+    </ClCompile>
+    <ClCompile Include="OldAlchemyWnd.cpp">
+      <Filter>GameFeatures\OldAlchemyWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="OldMainPopWnd.cpp">
+      <Filter>GameFeatures\OldMainPopWnd</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
